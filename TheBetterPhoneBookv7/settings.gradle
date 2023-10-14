@@ -1,0 +1,2 @@
+rootProject.name='The Better Phone Book'
+include ':app'

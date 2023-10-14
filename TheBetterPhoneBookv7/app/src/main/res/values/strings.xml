@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">The Better Phone Book</string>
+    <string-array name="image_options">
+        <item>Gallery</item>
+        <item>Camera</item>
+    </string-array>
+    <string name="title_activity_map">Map</string>
+</resources>

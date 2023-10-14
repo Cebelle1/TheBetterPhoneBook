@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainContactList">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightBlue"
+        android:descendantFocusability="beforeDescendants"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="top"
+                android:background="@color/darkerBlue"
+                android:gravity="center"
+                android:text="Contacts"
+                android:textColor="@color/lightestBlue"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/eSearch"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/textView2"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/edit_round"
+                android:drawableLeft="@android:drawable/ic_menu_search"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Search a contact"
+                android:inputType="textPersonName"
+                android:paddingTop="10dp"
+                android:textColor="@color/okBlue"
+                android:textColorHint="@color/lightBlue" />
+
+            <ImageButton
+                android:id="@+id/btnHelp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="false"
+                android:layout_marginTop="5dp"
+                android:background="@color/darkerBlue"
+                android:paddingRight="5dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/helpicon" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/contacts_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/eSearch"
+                android:background="@color/lightBlue"
+                android:paddingTop="5dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <ImageButton
+                android:id="@+id/buttonAddContact"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_below="@id/contacts_recycler"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="false"
+                android:background="@color/darkerBlue"
+                android:paddingLeft="5dp"
+                android:paddingTop="3dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/plussign3" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
