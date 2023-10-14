@@ -10,8 +10,13 @@ Consequently, my goal is to enhance the 'Contacts' application by integrating ad
 
 ## Features
 > Save Contacts (Name, Phone Number, Address)
+> 
 > Call function
+> 
 > Search function for a specific contact
+> 
 > Saving of locations and viewing them in the google map API (save friend's home address or own home address)
+> 
 > Take photo to save as contact display photo
+> 
 > Link to website for app assistance
