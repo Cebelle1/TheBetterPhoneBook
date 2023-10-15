@@ -1,7 +1,7 @@
 # TheBetterPhoneBook
 An android studio project I did in Poly for the Mobile App Development module
 
-Update: This project was built in 2020, outdated Gradle and Android Studio version so there will be dependencies issue
+Dependencies: This project was built in 2020 using Android Studio, Gradle 3.6.3
 
 ## Problem Statement
 Mobile devices pose a significant challenge for the elderly demographic due to their potential for user confusion and usability issues.
